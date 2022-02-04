@@ -51,13 +51,13 @@ function renderLicenseSection(license) {
   }   
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+
+
 function renderGitHub(contributor) {
-  return 'Hi Mom'
+  return `https://github.com/${contributor}`
 }
 
-// TODO: Create a function to generate markdown for README
+
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -100,4 +100,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {generateMarkdown, licenseList};
