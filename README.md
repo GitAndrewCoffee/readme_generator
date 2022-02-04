@@ -1,13 +1,11 @@
 
-  [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  # Flibbergutsol
+  # readme_generator
 
-  Something that does nothing very well
+  This application will generate a readme.md file using markdown.
 
   ## Table of Contents
-
-  
 
   - [Installation](#Installation)  
   - [Usage](#Usage) 
@@ -18,24 +16,36 @@
 
   ## Installation
 
-  With great difficulty
+  To install this application you will need to down load the application and run NPM install.
 
   ## Usage
 
-  Command Prompts
+  Simply follow the prompts
+
+  See Video
+
+  [![Readme Generator Video Demo](demo.jpg)](https://github.com/GitAndrewCoffee/readme_generator/blob/main/demo.mp4 "https://github.com/GitAndrewCoffee/readme_generator/blob/main/demo.mp4")
 
   ## Contributor
 
   https://github.com/GitAndrewCoffee
 
+  Using:
+
+  - JavaScript
+  - Node
+  - NPM
+  - NPM FS
+  - NPM Inquirer
+  
   ## Tests
 
-  Useless drivel
+  There are no unit tests for this application.
 
   ## Questions
 
-  Many, too many
+  No Open Questions
   
   ## License
 
-  Please visit this link for license details: https://opensource.org/licenses/BSD-3-Clause
+  Please visit this link for license details: https://opensource.org/licenses/MIT
