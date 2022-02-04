@@ -59,42 +59,45 @@ function renderGitHub(contributor) {
 
 
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  ${renderLicenseBadge(data.license)}
+
+  # ${data.title}
 
   ${data.description}
 
   ## Table of Contents
 
-  ${renderLicenseBadge(data.license)}
+  
 
-  *[Installation](#Installation)  
-  *[Usage](#Usage) 
-  *[Contributor](#Contributor)
-  *[Tests](#Tests)
-  *[Questions](#Questions)
-  *[License](#License)
+  - [Installation](#Installation)  
+  - [Usage](#Usage) 
+  - [Contributor](#Contributor)  
+  - [Tests](#Tests)  
+  - [Questions](#Questions)  
+  - [License](#License)  
 
-  ##Installation
+  ## Installation
 
   ${data.installation}
 
-  ##Usage
+  ## Usage
 
   ${data.usage}
 
-  ##Contributor
+  ## Contributor
 
   ${renderGitHub(data.contributor)}
 
-  ##Tests
+  ## Tests
 
   ${data.tests}
 
-  ##Questions
+  ## Questions
 
   ${data.questions}
   
-  ##License
+  ## License
 
   ${renderLicenseSection(data.license)}
 `;
