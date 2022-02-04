@@ -14,6 +14,31 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ${data.description}
+
+  ## Table of Contents
+
+  ${renderLicenseBadge(data.license)}
+
+  [Installation](http://www.google.fr/ "Installation Section")
+  [Usage](http://www.google.fr/ "Usage Section")
+  [License](http://www.google.fr/ "License Section")
+  [Contributor](http://www.google.fr/ "Contributor Section")
+  [Tests](http://www.google.fr/ "Tests Section")
+  [Questions](http://www.google.fr/ "Questions Section")
+
+  ## Installation
+
+  ## Usage
+
+  ## License
+
+  ## Contributor
+
+  ## Tests
+
+  ## Questions
+
 `;
 }
 
