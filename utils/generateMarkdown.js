@@ -80,7 +80,7 @@ function generateMarkdown(data) {
 
   ##Usage
 
-  ${data.Usage}
+  ${data.usage}
 
   ##Contributor
 
@@ -88,11 +88,11 @@ function generateMarkdown(data) {
 
   ##Tests
 
-  ${data.Usage}
+  ${data.tests}
 
   ##Questions
 
-  ${data.Usage}
+  ${data.questions}
   
   ##License
 
