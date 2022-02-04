@@ -1,5 +1,5 @@
-const inquire = require('inquirer')
-const fs = require('fs')
+const inquire = require('inquirer');
+const fs = require('fs');
 const markdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
@@ -51,7 +51,7 @@ const questions = [    {
 ];
 
 function writeToFile(fileName, data) {
-    fs.writeToFile(fileName, markdown.generateMarkdown(data), function(err) {
+    fs.writeFile(fileName, markdown.generateMarkdown(data), function(err) {
         console.log(err);
     });
 }
