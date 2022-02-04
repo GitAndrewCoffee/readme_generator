@@ -27,8 +27,8 @@ function renderLicenseBadge(license) {
       return licenseList[3].badge;            
     case licenseList[4].name:
       return licenseList[4].badge;      
-    case licenseList[5].name:
-      return licenseList[5].badge; 
+    case licenseList[0].name:
+      return licenseList[0].badge; 
     default:
       console.log(`License ${license} note found`);
   }     
@@ -44,8 +44,8 @@ function renderLicenseSection(license) {
       return `Please visit this link for license details: ${licenseList[3].link}`;           
     case licenseList[4].name:
       return `Please visit this link for license details: ${licenseList[4].link}`;
-    case licenseList[5].name:
-      return `Please visit this link for license details: ${licenseList[5].link}`;
+    case licenseList[0].name:
+      return `Please visit this link for license details: ${licenseList[0].link}`;
     default:
       console.log(`License ${license} note found`);
   }   

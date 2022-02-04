@@ -22,11 +22,11 @@ const questions = [    {
     name: "license",
     type: "list",
     message: "Which License do you want to use?",
-    choices: [markdown.licenseList[1].name, 
+    choices: [markdown.licenseList[0].name, 
+                markdown.licenseList[1].name, 
                 markdown.licenseList[2].name, 
                 markdown.licenseList[3].name, 
-                markdown.licenseList[4].name, 
-                markdown.licenseList[5].name]
+                markdown.licenseList[4].name]
   },
   {
     type: 'input',
@@ -50,14 +50,12 @@ const questions = [    {
   }
 ];
 
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeToFile(, markdown.generateMarkdown(data), function(err) {
+    fs.writeToFile(fileName, markdown.generateMarkdown(data), function(err) {
         console.log(err);
     });
 }
 
-// TODO: Create a function to initialize app
 function init() {
     inquire.prompt(questions)
         .then(data =>{
